@@ -1,0 +1,45 @@
+IOC hashes from https://www.iranwatch.org/sites/default/files/public-intelligence-alert.pdf
+
+Urban Development Plan.doc
+https://virusshare.com/file?0ee32e3ea3d83da9df6317d7c8c539f0f3622af82ef242d74fdca1e5d4ee427f
+- VBS Malware
+
+Etisalat.exe
+https://virusshare.com/file?e59522181911b0fdd183e3451b86bba3454b9c7e18abb895e44ed4c233b3c2dd
+- AutoIt Malware
+
+Birds.exe
+https://virusshare.com/file?3b193238eca12dacad1dbd55edd31da7d8936a6cbf916278d4e62b145f1ff43c
+- BITS 1.0 Malware
+
+Splitter.exe
+https://virusshare.com/file?60f0e5a448dd3a4581a6dfadc375cd5619a1ab2901bd108dcc85f8d77d074dde
+- BITS 1.0 Malware
+
+Activorse.exe
+https://virusshare.com/file?333d4455b920c44d278767783aff3383419872f802cc254c105702604d563aea
+- BITS 1.0 Malware
+
+poweriso.exe
+https://virusshare.com/file?ea9070fc1fe5ea500ef0de631f478d8881d4c9f960cc7730d79d8d33a427fdbe
+- BITS 1.0 Malware
+
+final1.exe
+https://virusshare.com/file?590c33ea344a2ee095004d4069122f0afccbfceee422bb5d2838c32a9026a86a
+- BITS 2.0 Malware
+
+events.exe
+https://virusshare.com/file?66c51484b653277a5d40cbd2738b33cba8fb5ccc741f0c24634944ec4cac1142
+- BITS 2.0 Malware
+
+1.exe
+https://virusshare.com/file?9ce13cd2bd4539852a6b5a1cacd98c7d07e4fe5cb5423a74a5141b84511b4e28
+- Firefox Malware
+
+Al_image of my own_official for registrartion_Al_GNP.exe
+https://virusshare.com/file?c8bc6144fe3c97a062572e7d1c3db5ccd1c1f6ea9ceaac4a492aa31befd9e0c9
+- Python Malware
+
+Teddumper.exe
+https://virusshare.com/file?0edf56c79475442bdb36cc10a7b50ee927a59053e8a3945018bf5b3d849581e0
+- Python Malware

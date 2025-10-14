@@ -1,0 +1,36 @@
+hashes from: https://global.ptsecurity.com/en/research/pt-esc-threat-intelligence/covid-19-and-new-year-greetings-the-higaisa-group/
+- The page also explains how these files are related, and how the function in an attack. The info below is from this site.
+
+20200308-sitrep-48-covid-19.pdf.lnk
+https://virusshare.com/file?95489af84596a21b6fcca078ed10746a32e974a84d0daed28cc56e77c38cc5a8
+- base64 encoded payload at end of lnk file, decoded using certutil.exe
+
+oGhPGUDC03tURV.tmp
+https://virusshare.com/file?f74199f59533fbbe57f0b2aae45c837b3ed5e4f5184e74c02e06c12c6535f0f9
+- CAB archive, result from decoding above.
+
+3UDBUTNY7YstRc.tmp
+- DLL, used for autorun
+
+9sOXN6Ltf0afe7.js
+- installation script
+
+486AULMsOPmf6W.tmp
+- legitimate executable file used for autorun
+
+20200308-sitrep-48-covid-19.pdf
+- legitimate pdf used for distraction/bait
+
+cSi1r0uywDNvDu.tmp
+- XSL, contains installation code written in Visual Basic
+
+MiZl5xsDRylf0W.tmp
+- installer payload
+
+OINFO12.OCX
+https://virusshare.com/file?a49133ed68bebb66412d3eb5d2b84ee71c393627906f574a29247d8699f1f38e
+- code for executing final payload
+
+Wordcnvpxy.exe
+https://virusshare.com/file?002c9e0578a8b76f626e59b755a8aac18b5d048f1cc76e2c12f68bc3dd18b124
+- payload exe

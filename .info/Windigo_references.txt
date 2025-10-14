@@ -1,0 +1,20 @@
+Ebury_1
+https://bazaar.abuse.ch/sample/25eb6b951a7fef71899907d726ac608eaaed6ae5495c308bf51e7f70e12ba49f/
+
+librwctl.so
+https://bazaar.abuse.ch/sample/743d735be53444970d55efe67db57f9d6ff0b1ebfe170cd2847d5c9cdcc34d75/
+- ebury
+
+Ebury.E.so
+https://virusshare.com/file?3bc5b33247ed6a4b22890ad47b9bcf7209a1d0f767cc441cf4d2206557ddadba
+- hash from https://www.welivesecurity.com/2017/10/30/windigo-ebury-update-2/
+
+Ebury_2
+https://bazaar.abuse.ch/sample/0a4d7321a74e7c86ad017f99d62899cebbf66752955a64cb36e6b19191d6c09c/
+
+Ebury_3
+https://bazaar.abuse.ch/sample/0b21282d684704055e91626f486a7306d01328050e65249b54f209f3f8a25f74/
+
+libkeyutils.so.1.10.2
+https://bazaar.abuse.ch/sample/015e95f13223a9b687001a3b2e1864a6c20e87ce3f4dcc753bfae52a77341aef/
+- ebury

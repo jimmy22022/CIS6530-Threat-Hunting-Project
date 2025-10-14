@@ -1,0 +1,35 @@
+some hashes from https://web.archive.org/web/20221209052853/https://www.prevailion.com/phantom-in-the-command-shell-2/
+
+downloader.js
+https://virusshare.com/file?75ae7bbdbfccde37a545a6b316e885e9a6d1ecf3c069fa48594a6db6f30c41d0
+
+front.jpg.lnk
+https://bazaar.abuse.ch/sample/fd78f398e7cc8ced62deba213e0218d780357bcf89e01b748f8ed1e252ac3b21/
+- sig: CortaBot, stager
+
+LNK1
+https://virusshare.com/file?79ddc62bcab8efaef586c7e4202fa6a40a82a37571cbab309812602f7a03162b
+
+LNK2
+https://virusshare.com/file?9666285017da522bc193fdfa89ecec0ebb8f382aed04260f9c3dc6520bcb23b5
+
+LNK3
+https://virusshare.com/file?ca23b0c263652259fc9163d9981033913c9aa3d51a23b1e43f145ca0e0960a30
+
+MSI
+https://bazaar.abuse.ch/sample/2461d5d8eb8bfaa6b178fe2c457c215bbea85443a7d33bb007aa7dce52428d18/
+
+EXE1
+https://bazaar.abuse.ch/sample/14fddd8b0874d470e5ad32dc6c986144cfd2a5d954c2a8a8e6012c6f1734a8b3/
+
+EXE2
+https://bazaar.abuse.ch/sample/44f55649e322009b3b7affa89714d96696ba4b31ee9e710878eb59632966958b/
+
+EXE3
+https://bazaar.abuse.ch/sample/96964a0b7f34b32246b30de756b6f2d659cfafde7c939a6dbf56dbb038aefa48/
+
+EXE4
+https://bazaar.abuse.ch/sample/69896bcd1041c6cc5a3caf6e1e4fd2be566bff0e0f3d3154a0e45ab00cb217f9/
+
+EXE5
+https://bazaar.abuse.ch/sample/f934c685506a5fc30ba4c63a14f81c2c51863a264c498186234b2edf7d05e51d/

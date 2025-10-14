@@ -1,0 +1,39 @@
+PREMIUM FINANCE AGREEMENT.docx
+https://bazaar.abuse.ch/sample/4835f6d3b8e1414e0176a9142c154d8b67f3cf0183ce9b230cb240ba110d8140/
+- sig: trickbot
+
+template-jn02b3.dot
+https://bazaar.abuse.ch/sample/fd05481da74a6d89ac3c60db954e8f02a85711f9abaf12ede2d4e54eaf06a032/
+- sig: trickbot
+
+adb09kmML.exe
+https://bazaar.abuse.ch/sample/24dd0b8a2e2faff39ea54abc2654d91fdd7349aad14b0537f4d05a6af0b16ebe/
+- sig: trickbot
+
+Order_Summary-9632850.xlsb
+https://bazaar.abuse.ch/sample/12bbd7661b6fd48f3552101588625bde0709dd68b28a0677d000a02389e3b812/
+- sig: trikcbot
+
+sat1_0609_2.dll
+https://bazaar.abuse.ch/sample/337a487f1cb8f16200a5d14cac1dac3478e95cf3077b3872d319970131bea702/
+- sig: trickbot
+
+c0db57619980e33886e1468a3b195a88.exe
+https://bazaar.abuse.ch/sample/caf4706cf04d70dee7b0e6cbb70af2cf575f6b800b5aaae5dde7b1e3246d5f23/
+- sig: trickbot
+
+f43c9ad36b819d692a9aea25d155847b3e098099aa97750f67bcc01c63ea7b55
+https://bazaar.abuse.ch/sample/f43c9ad36b819d692a9aea25d155847b3e098099aa97750f67bcc01c63ea7b55/
+- sig: trickbot
+
+cb96222c0e65bce5258ec55c4a0de92f.exe
+https://bazaar.abuse.ch/sample/7f77b60f4ba221f7a29938d0b3e8f568a4ecb4f010a122770a4173cd96d32c4e/
+- sig: trickbot
+
+f289e73debb5ca04a83c7e9d8ae51ec4.exe
+https://bazaar.abuse.ch/sample/b13776c2708961fadeba4d2fb3cf75f77e39688bd8969141675ef75044c5b3f9/
+- sig: trickbot
+
+af9f00bd331dbd53996a8c9e8eb23cf5.dll
+https://bazaar.abuse.ch/sample/eac25b873a3da3fa23109a007c3320889f89010df56ae83fec59e5e262e6e510/
+- sig: trickbot

@@ -1,0 +1,6 @@
+LaZagne - the report just says they use unmodified, so i found a generic exe.
+https://bazaar.abuse.ch/sample/ed2f501408a7a6e1a854c29c4b0bc5648a6aa8612432df829008931b3e34bf56/
+
+They use custom tools Imecab and Sorgu - i couldn't find these
+
+https://www.security.com/threat-intelligence/leafminer-espionage-middle-east

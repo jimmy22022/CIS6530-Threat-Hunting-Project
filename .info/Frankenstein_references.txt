@@ -1,0 +1,15 @@
+MinutesofMeeting-2May19.docx
+https://virusshare.com/file?6be18e3afeec482c79c9dea119d11d9c1598f59a260156ee54f12c4d914aed8f
+- should fetch remote Word template
+
+http://droobox.online/luncher.doc
+https://hybrid-analysis.com/sample/08ea708b93810ffc36c58078540fe455c4a5452d9ce443be050c7c9e4037b2f0/5cd267ee028838fd42c7a1b9
+
+VBS
+https://virusshare.com/file?4f5d633604b8a3cceb7d582bab640d47e8a5898458c5c2f0e28adcdf01aabf33
+- hash from https://lab52.io/blog/wirte-group-attacking-the-middle-east/
+- according to secureworks, sophos, Frankenstein = WIRTE = Aluminum Thorn: https://www.secureworks.com/research/threat-profiles/aluminum-thorn
+
+exhaustedq.txt
+https://virusshare.com/file?27f4e0c718d4614543c95125d670f4420b1b0990a5fdb1da9e71fa3585045968
+- from https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044/

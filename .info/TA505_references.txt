@@ -1,0 +1,43 @@
+2020.08_1554 Bonuses.doc
+https://bazaar.abuse.ch/sample/22c7c7460b79fd75c96dc7d90d8edcf13fdead3619d16f4b63dca58f1fee69f9/
+
+Krankheitsmeldung_092020_07.xlsm
+https://bazaar.abuse.ch/sample/64022efbff67c341a948c383e2be37dc12977c0feb3ce8b0716f3ebad023760d/
+
+rgoc2.dll
+https://bazaar.abuse.ch/sample/df90e36ead46dcff6b6235a71ef05f6ca52250f432ddb46a4a0b8b9142660ba3/
+
+oleObject1.bin
+https://bazaar.abuse.ch/sample/f674740dfdf4fd4ded529c339160c8255cdd971c4a00180c9e3fc3f3e7b53799/
+
+CLBS_0011_1220.docx
+https://bazaar.abuse.ch/sample/4ab56a1abbf6adc9c6e3e2444bf5807c5269309c8dfddd658d365d0d6f23e6d2/
+
+trojan.js
+https://bazaar.abuse.ch/sample/c74968d0097cd513df9bd1a689a6bf28297a9ba9b8fb879958944ecfb5746183/
+
+Cl0p
+https://bazaar.abuse.ch/sample/220c50ccf6a9d9727e9f442df42469f027d9f7a2ea833319971746280023bb0c/
+
+case_1978132122_1827517231.xlsm
+https://bazaar.abuse.ch/sample/54094b2385ea86406ad20d865e6c03ec6233187e293d3d982d281d0237b552dc/
+- CobaltStrike
+
+9.capital
+https://bazaar.abuse.ch/sample/1c8de01df040c973b37ae5ce8e1bb523e1ba24a9c25263706022f9a9894a2e50/
+- CobaltStrike
+
+EXE1
+https://bazaar.abuse.ch/sample/8f94159f886da37cbed0ea9b30219e2f4f139d67a7040465e8c76bb6c1b639ba/
+
+EXE2
+https://bazaar.abuse.ch/sample/850a2090e3dd9c23f4777035a6e98a4ecbfd305b380c16645cf5d5a48dbd062b/
+
+DLL1
+https://bazaar.abuse.ch/sample/0dc6df69b3296588c7fb5d0e7888b6556b702e1ba24ccbd7e11a10f56be81f10/
+
+DLL2
+https://bazaar.abuse.ch/sample/cdabed84f0cd9be4f026543546f87d95c4b9226c6487a22c0a75787772aff549/
+
+DLL3
+https://bazaar.abuse.ch/sample/d5c234579d1b51ea826c3dfd8251a82397fd0e9d6ee456d4f7b00bf58b7031a0/
