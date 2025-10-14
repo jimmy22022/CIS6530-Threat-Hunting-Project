@@ -1,0 +1,42 @@
+DOC1
+https://bazaar.abuse.ch/sample/4e8a2b592ed90ed13eb604ea2c29bfb3fbc771c799b3615ac84267b85dd26d1c/
+
+DOC2
+https://bazaar.abuse.ch/sample/31a35e3b87a7f81449d6f3e195dc0660b5dae4ac5b7cd9a65a449526e8fb7535/
+
+HajjReport.docm
+https://bazaar.abuse.ch/sample/7b1b332c653d62effffffd27a8da5bf78c0a5e5c1fb04191e0943333671c46c3/
+
+DOC3
+https://bazaar.abuse.ch/sample/c3afd5ce1ca50a38438bb5026cca27bfbf2d8e786e03f323adceb8ad17517eca/
+
+DOC4
+https://bazaar.abuse.ch/sample/40dead1e1d83107698ff96bce9ea52236803b15b63fb0002e0b55af71a9b5e05/
+
+Cooperation terms.xls
+https://bazaar.abuse.ch/sample/026868713d60e6790f41dc7046deb4e6795825faa903113d2f22b644f0d21141/
+
+main.exe
+https://bazaar.abuse.ch/sample/a500e5ab8ce265d1dc8af1c00ea54a75b57ede933f64cea794f87ef1daf287a1/
+- signature belongs to Hive malware family
+
+muddydoc.bin
+https://bazaar.abuse.ch/sample/2b0224eeb23a410832080991094d86d8d3a24f35e33a95287efbb471cdb14c20/
+
+comviva.com.webinar.msi
+https://bazaar.abuse.ch/sample/dd2675e2f6835f8a8a0e65e9dbc763ca9229b55af7d212da38b949051ae296a5/
+- sig: AteraAgent
+
+hostmanager.log.exe
+https://bazaar.abuse.ch/sample/e9a59bbb4e2c28130d4daae12219f7ec2876c66ca9ab7e051cbf587770afab94/
+
+Mivchar.msi
+https://bazaar.abuse.ch/sample/3e6857907931eacc843a593d8fddccbb7660b0cc253b78e163cb3e854df72a89/
+- sig: RustyStealer
+
+kurs trajnimi.msi
+https://bazaar.abuse.ch/sample/7863a1d2d90b2b739663843f977876640a10760896e74f15655fbbefa444ccc2/
+- sig: Heodo
+
+wtsapi32.dll
+https://bazaar.abuse.ch/sample/5f22f4c4fdb36c4f0ea3248abb00521e39008c1fb4c97e1b4a9c7b9ef0b691c2/

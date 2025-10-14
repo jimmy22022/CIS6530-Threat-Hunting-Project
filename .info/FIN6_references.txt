@@ -1,0 +1,13 @@
+Sophia Alter.lnk
+https://bazaar.abuse.ch/sample/ad24f84494145758b811cb422fe417aa08a55a4a81bf82918487bda3dc6e431d/
+
+Lisa Drager.lnk
+https://bazaar.abuse.ch/sample/7ce58900fc2d2a5378e9c1952a64f7d48b8592b6efb7bd4efeea9c42563d3b9b/
+
+More Eggs malware used by FIN6 for initial compromise
+
+hashes below from:
+https://usa.visa.com/dam/VCOM/global/support-legal/documents/fin6-cybercrime-group-expands-threat-To-ecommerce-merchants.pdf
+
+More_Eggs (b4dcb80246769a6b291a4c7e98a380bd)
+https://virusshare.com/file?bd741964ae7b4449a9d7d0d08299d44ca96d7e11643d18d71c8ca6f24a9c0447

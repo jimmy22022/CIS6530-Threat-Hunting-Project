@@ -1,0 +1,9 @@
+FIN10 uses publicly available tools described in https://services.google.com/fh/files/misc/rpt-fin-10-anatomy-of-a-cyber-en.pdf like:
+
+PowerShell Empire
+https://bazaar.abuse.ch/sample/4a23326def54ca250c558925ef891ad92ecd9a1a6870ea85760f8b97fe28613f/
+
+Meterpreter (Metasploit)
+https://bazaar.abuse.ch/sample/185f21e703fd2807db3ba47c5a238196a7ca3e5293c2011450c5d362d39c0362/
+
+(I couldnt find any specific malware hashes so i downloaded generic versions).

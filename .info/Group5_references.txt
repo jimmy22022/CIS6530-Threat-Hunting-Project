@@ -1,0 +1,13 @@
+file hashes values found from https://citizenlab.ca/2016/08/group5-syria/
+
+putty.exe
+https://virusshare.com/file?3da9082fbe968860be21e604af23dba71125e600ff4b2bd70069fe2de78966a9
+ - stage1 downloader
+
+Notepad++.exe
+https://virusshare.com/file?ee65806840e45acb2eb661fd2b38fd0bdd98cfd98ec2a86a72a7a398cad81bfc
+ - another version putty.exe - this would be embedded in Powerpoint as OLE object.
+
+LManager.exe
+https://virusshare.com/file?d72676bbf8de82486c3cebfdad2961cc68a6b564a43f9f987c95320fcd6a330a
+ - unpacked version of file above

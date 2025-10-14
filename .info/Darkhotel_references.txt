@@ -1,0 +1,22 @@
+hashes from https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/08070901/darkhotelappendixindicators_kl.pdf
+ - also has info on hashes and explaination of purpose at end
+
+msieckc.exe
+https://virusshare.com/file?4b0722a9f5bb2515bb48c842d83184ecb4999a3e2e44a636de70c73db2a600f1
+ - Small Downloader
+ 
+DmaUp3.exe
+https://virusshare.com/file?a6dde34a97c90c12400c1db92ea43b291a4736670324067f7a0b0c5c6a77000b
+ - Information Stealer
+
+acroedit.exe
+https://virusshare.com/file?6d562c472bcef1217c3122f4e0930a23a8516b36940d25c999adfa8da80ebbf9
+ - Trojan.Win32.Karba.e
+
+igfxext.exe
+https://virusshare.com/file?c3fc6ff8ad62804c0e408961e035c03c51ad9bb2fe858c5dd0db0b429bda5263
+ - Trojan-Dropper & Injector (infected legitimate files)
+
+csmrs.exe
+https://virusshare.com/file?3f7c3bd8619fcbf81d21b9cc259dcdf857c4570065315934de497b88bca06708
+ - Signed keylogger

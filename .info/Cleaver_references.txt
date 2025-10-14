@@ -1,0 +1,28 @@
+Setup.exe
+https://virusshare.com/file?0d1f479842cd5bde4f18ab8c85a099da39e13a4051a7c21334e33d55b6f18d76
+
+zhmimikatz.exe
+https://virusshare.com/file?c9fc8133e755c14cb02872ba05a2332baefe5e94797479aded46c3db83a7cc14
+
+WebServiceConnector.dll
+https://virusshare.com/file?b18f80a02d45eaed618993447c82916ad8802e552dddccf733a3698794d8cb9d
+ - This is detected as TzeeBot trojan
+
+Notepad.exe
+https://virusshare.com/file?ad06e03fdd9eff480ca623ea23ec87c794d99ae6dda308c979fa5173b2b8a514
+
+AntiVirusDetectorConsole.exe 
+https://virusshare.com/file?902f2391b1075e14985bc91316c98cdcf3442ecaeb3ef12422813f946ab8409e
+
+netscp.exe
+https://virusshare.com/file?8f9a45ba73c67ba9c4958ea49508c350a0e1c3caf476ccab2fb8cb3049e3ba46
+
+dllhost.exe
+https://virusshare.com/file?fd4a9af7ba67f794a83a720539666e89f288686a432b5c7133033a2ebde266cc
+
+csext.exe
+https://virusshare.com/file?aa7ac2a053ceba819fcd1c8b273db64296c2754a8101291870e142519c416b1b
+
+
+ - indicator hashses found from:
+https://web.archive.org/web/20200302085133/https://www.cylance.com/content/dam/cylance/pages/operation-cleaver/Cylance_Operation_Cleaver_Report.pdf
